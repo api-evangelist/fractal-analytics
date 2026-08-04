@@ -42,5 +42,24 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fractal Analytics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/fractal-analytics-stock
+Fractal Analytics Limited (fractal.ai) is an enterprise artificial intelligence services and
+products company founded in 2000, headquartered in New York with a large delivery footprint in
+India and roughly 5,000 employees across 18 global locations. Fractal sells AI consulting, data
+engineering, decision-science and design services to Fortune 500 clients in consumer packaged
+goods, retail, healthcare and life sciences, technology/media/telecom, financial services,
+insurance and industrials, and builds products on top of that practice — most notably Cogentiq,
+its enterprise agentic AI platform, plus LLM Studio and brands including Flyfish, Asper.ai,
+Kalaido.ai, Vaidya.ai and iqigai. The company listed on the NSE and BSE under the symbol FRACTAL
+in February 2026.
+
+**No public API surface.** As of the 2026-08-04 enrichment pass, Fractal publishes no developer
+portal, no API reference, and no machine-readable contract (no OpenAPI/Swagger, AsyncAPI, GraphQL
+SDL, hosted MCP server, or A2A agent card) reachable anonymously on any Fractal-controlled host.
+API access is delivered inside client engagements and gated product tenants — the Cogentiq tenant
+host `cogentiq.fractal.ai` answers `502` from its Azure Application Gateway to anonymous requests,
+and every `/.well-known/*` path on `fractal.ai` returns `404`. See
+[`well-known/fractal-analytics-well-known.yml`](well-known/fractal-analytics-well-known.yml) for
+the probe record.
+
+- https://fractal.ai/
+- https://fractal.ai/products/cogentiq/

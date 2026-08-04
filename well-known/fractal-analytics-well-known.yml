@@ -1,0 +1,52 @@
+generated: '2026-08-04'
+method: probed
+source: live HTTPS probes of https://fractal.ai/.well-known/*
+host: https://fractal.ai
+note: >-
+  No RFC 8615 well-known documents are published on the Fractal Analytics corporate
+  host. Every path below was probed anonymously and returned 404 (the site is a Framer
+  front-end that serves an HTML 404 page for unknown paths, so none of these are
+  false-positive HTML 200s). The gated product host cogentiq.fractal.ai answered 502
+  from its Azure Application Gateway for every path, including /.well-known/*, so no
+  discovery documents could be observed there either. Recorded as evidence of absence;
+  no WellKnown / SecurityTxt pointer is wired in apis.yml because nothing is published.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+other_hosts:
+- host: https://cogentiq.fractal.ai
+  result: 502 Bad Gateway (Microsoft-Azure-Application-Gateway/v2) on every path probed
+  paths_probed:
+  - /
+  - /llms.txt
+  - /openapi.json
+  - /swagger.json
+  - /api-docs
+  - /docs
+  - /redoc
+  - /api/openapi.json
+  - /v1/openapi.json
+  - /.well-known/security.txt
+  - /.well-known/openid-configuration
+  - /.well-known/oauth-authorization-server
+  - /.well-known/agent-card.json
+  - /.well-known/agent.json
+x-evidence:
+  fetched: '2026-08-04'
+  method: HTTPS GET, follow redirects, anonymous

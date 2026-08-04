@@ -1,23 +1,84 @@
 aid: fractal-analytics
 name: Fractal Analytics
-description: 'Fractal Analytics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Fractal Analytics Limited (fractal.ai) is an enterprise artificial intelligence
+  services and products company founded in 2000, headquartered in New York with a large
+  delivery footprint in India and roughly 5,000 employees across 18 global locations.
+  Fractal sells AI consulting, data engineering, decision-science and design services to
+  Fortune 500 clients in consumer packaged goods, retail, healthcare and life sciences,
+  technology/media/telecom, financial services, insurance and industrials, and builds
+  products on top of that practice — most notably Cogentiq, its enterprise agentic AI
+  platform (with MCP and agent gateways, low-code agent builder and pre-built domain
+  agents), LLM Studio, and consumer/vertical brands including Flyfish, Asper.ai,
+  Kalaido.ai, Vaidya.ai and iqigai. The company listed on the NSE and BSE under the
+  symbol FRACTAL in February 2026. Its API surface is delivered inside client engagements
+  and gated product tenants rather than through a public developer program: as of this
+  profiling pass Fractal publishes no public developer portal, no OpenAPI or other
+  machine-readable API contract, and no hosted MCP server or A2A agent card.'
 url: https://raw.githubusercontent.com/api-evangelist/fractal-analytics/refs/heads/main/apis.yml
+image: https://fractal.ai/docs/Logos/fractal-analytics-logo.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Artificial Intelligence
+- Analytics
+- Data Engineering
+- Consulting
+- Agentic AI
+- Enterprise AI
+- Machine Learning
+- Decision Intelligence
+- Professional Services
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/fractal-analytics-domain-security.yml
+- type: LLMsTxt
+  url: llms/fractal-analytics-llms.txt
 - type: Website
-  url: https://www.hiive.com/securities/fractal-analytics-stock
+  url: https://fractal.ai/
+- type: About
+  url: https://fractal.ai/about-us/
+- type: Products
+  url: https://fractal.ai/products/
+- type: Solutions
+  url: https://fractal.ai/solutions/
+- type: Blog
+  url: https://fractal.ai/blog/
+- type: Press
+  url: https://fractal.ai/about-us/media/
+- type: Partners
+  url: https://fractal.ai/partnerships-and-alliances/
+- type: Team
+  url: https://fractal.ai/about-us/leadership-team/
+- type: Careers
+  url: https://fractal.ai/careers/
+- type: Investors
+  url: https://fractal.ai/investor-relations/
+- type: Contact
+  url: https://fractal.ai/contact-us/
+- type: Support
+  url: https://fractal.ai/contact-us/
+- type: PrivacyPolicy
+  url: https://fractal.ai/privacy-policy/
+- type: TermsOfUse
+  url: https://fractal.ai/policy/termsofuse/
+- type: Youtube
+  url: https://www.youtube.com/@fractalai
+- type: LinkedIn
+  url: https://www.linkedin.com/company/fractal-analytics/
