@@ -15,6 +15,17 @@ description: 'Fractal Analytics Limited (fractal.ai) is an enterprise artificial
   profiling pass Fractal publishes no public developer portal, no OpenAPI or other
   machine-readable API contract, and no hosted MCP server or A2A agent card.'
 url: https://raw.githubusercontent.com/api-evangelist/fractal-analytics/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://fractal.ai/docs/Logos/fractal-analytics-logo.png
 x-type: company
 x-source: harvest:secondary-market
