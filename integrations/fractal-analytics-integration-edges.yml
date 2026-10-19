@@ -1,8 +1,13 @@
 generated: '2026-10-13'
 method: searched
 checked:
+- https://api.appexchange.salesforce.com/recommendations/v3/listings?type=consultants&pageSize=50&page=0
+- https://api.finder.partners.aws.a2z.com/search?locale=en&size=20&from=0
+- https://app.hubspot.com/api/chirp-frontend-external/v1/gateway/com.hubspot.marketplace.personalization.rpc.PersonalizationPublicRpc/search?hs_static_app=marketplace-storefront-public-ui&hs_static_app_version=1.13519
 - https://aws.amazon.com/marketplace/
 - https://azuremarketplace.microsoft.com/
+- https://www.databricks.com/en-partners-assets/data/partner/all/en.json
+- https://www.snowflake.com/content/snowflake-site/global/en/why-snowflake/partners/all-partners/_jcr_content/root/responsivegrid/container/container/filterable_resources.filter.json?offset=0
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -56,3 +61,105 @@ edges:
   seller_name: Fractal Analytics Inc.
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: AWS Partner Network (services)
+  partner: amazon-web-services
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://partners.amazonaws.com/partners/001E000001KdkpjIAB
+  category: Services partner
+  contract_reference:
+    register: AWS Partner Solutions Finder (api.finder.partners.aws.a2z.com/search)
+    spec_file: null
+    standard: AWS Partner Network (services path)
+    role: aws-services-partner
+    registered_name: Fractal Analytics
+    register_id: 001E000001KdkpjIAB
+    partner_tier: Premier
+    matched_domain: fractal.ai
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    partner_paths:
+    - path_name: Services Path
+      path_tier: Premier
+      path_stage: Differentiated
+    - path_name: Software Path
+      path_tier: null
+      path_stage: Differentiated
+    context:
+      service_deliveries: 1
+      professional_service_types:
+      - Custom Application Development
+      - Digital Marketing
+      - Managed Service Provider
+      - Strategic / IT Consulting
+      programs:
+      - ISV Accelerate
+      hq_country: United States
+    certified_products:
+    - product: AI Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: AI Software Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Consumer Goods Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Data Software Competency
+      type: AWS Competency
+      lapsed: false
+    - product: DevOps Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Financial Services Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Retail Consulting Competency
+      type: AWS Competency
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+- partner_name: Databricks Consulting & SI Partner Program
+  partner: databricks
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.databricks.com/company/partners/consulting-and-si
+  category: Services partner
+  contract_reference:
+    register: Databricks partner directory (en-partners-assets/data/partner/all/en.json)
+    spec_file: null
+    standard: Databricks C&SI partner
+    role: databricks-csi-partner
+    registered_name: Fractal
+    register_id: '5498'
+    partner_tier: null
+    matched_domain: fractal.ai
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    context:
+      regions:
+      - Asia-Pacific
+      - Europe
+      - North America
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+source:
+- https://api.appexchange.salesforce.com/recommendations/v3/listings?type=consultants&pageSize=50&page=0
+- https://api.finder.partners.aws.a2z.com/search?locale=en&size=20&from=0
+- https://app.hubspot.com/api/chirp-frontend-external/v1/gateway/com.hubspot.marketplace.personalization.rpc.PersonalizationPublicRpc/search?hs_static_app=marketplace-storefront-public-ui&hs_static_app_version=1.13519
+- https://www.databricks.com/en-partners-assets/data/partner/all/en.json
+- https://www.snowflake.com/content/snowflake-site/global/en/why-snowflake/partners/all-partners/_jcr_content/root/responsivegrid/container/container/filterable_resources.filter.json?offset=0
