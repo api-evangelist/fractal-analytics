@@ -27,3 +27,101 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: fractal-analytics-aws-partner-network-services
+  label: AWS Partner Network (services)
+  partner: amazon-web-services
+  partner_name: AWS Partner Network (services)
+  category: Services partner
+  type: register
+  channel: standard-directory
+  evidence: https://partners.amazonaws.com/partners/001E000001KdkpjIAB
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: AWS Partner Solutions Finder (api.finder.partners.aws.a2z.com/search)
+    spec_file: null
+    standard: AWS Partner Network (services path)
+    role: aws-services-partner
+    registered_name: Fractal Analytics
+    register_id: 001E000001KdkpjIAB
+    partner_tier: Premier
+    matched_domain: fractal.ai
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    partner_paths:
+    - path_name: Services Path
+      path_tier: Premier
+      path_stage: Differentiated
+    - path_name: Software Path
+      path_tier: null
+      path_stage: Differentiated
+    context:
+      service_deliveries: 1
+      professional_service_types:
+      - Custom Application Development
+      - Digital Marketing
+      - Managed Service Provider
+      - Strategic / IT Consulting
+      programs:
+      - ISV Accelerate
+      hq_country: United States
+    certified_products:
+    - product: AI Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: AI Software Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Consumer Goods Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Data Software Competency
+      type: AWS Competency
+      lapsed: false
+    - product: DevOps Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Financial Services Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Retail Consulting Competency
+      type: AWS Competency
+      lapsed: false
+  status: not-a-workflow
+  arazzo: null
+- slug: fractal-analytics-databricks-consulting-si-partner-program
+  label: Databricks Consulting & SI Partner Program
+  partner: databricks
+  partner_name: Databricks Consulting & SI Partner Program
+  category: Services partner
+  type: register
+  channel: standard-directory
+  evidence: https://www.databricks.com/company/partners/consulting-and-si
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Databricks partner directory (en-partners-assets/data/partner/all/en.json)
+    spec_file: null
+    standard: Databricks C&SI partner
+    role: databricks-csi-partner
+    registered_name: Fractal
+    register_id: '5498'
+    partner_tier: null
+    matched_domain: fractal.ai
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    context:
+      regions:
+      - Asia-Pacific
+      - Europe
+      - North America
+  status: not-a-workflow
+  arazzo: null
