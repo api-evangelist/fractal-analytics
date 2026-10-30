@@ -64,24 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fractal Analytics Limited (fractal.ai) is an enterprise artificial intelligence services and
-products company founded in 2000, headquartered in New York with a large delivery footprint in
-India and roughly 5,000 employees across 18 global locations. Fractal sells AI consulting, data
-engineering, decision-science and design services to Fortune 500 clients in consumer packaged
-goods, retail, healthcare and life sciences, technology/media/telecom, financial services,
-insurance and industrials, and builds products on top of that practice — most notably Cogentiq,
-its enterprise agentic AI platform, plus LLM Studio and brands including Flyfish, Asper.ai,
-Kalaido.ai, Vaidya.ai and iqigai. The company listed on the NSE and BSE under the symbol FRACTAL
-in February 2026.
+Fractal Analytics Limited (fractal.ai) is an enterprise artificial intelligence services and products company founded in 2000, headquartered in New York with a large delivery footprint in India and roughly 5,000 employees across 18 global locations. Fractal sells AI consulting, data engineering, decision-science and design services to Fortune 500 clients in consumer packaged goods, retail, healthcare and life sciences, technology/media/telecom, financial services, insurance and industrials, and builds products on top of that practice — most notably Cogentiq, its enterprise agentic AI platform (with MCP and agent gateways, low-code agent builder and pre-built domain agents), LLM Studio, and consumer/vertical brands including Flyfish, Asper.ai, Kalaido.ai, Vaidya.ai and iqigai. The company listed on the NSE and BSE under the symbol FRACTAL in February 2026. Its API surface is delivered inside client engagements and gated product tenants rather than through a public developer program: as of this profiling pass Fractal publishes no public developer portal, no OpenAPI or other machine-readable API contract, and no hosted MCP server or A2A agent card.
 
-**No public API surface.** As of the 2026-08-04 enrichment pass, Fractal publishes no developer
-portal, no API reference, and no machine-readable contract (no OpenAPI/Swagger, AsyncAPI, GraphQL
-SDL, hosted MCP server, or A2A agent card) reachable anonymously on any Fractal-controlled host.
-API access is delivered inside client engagements and gated product tenants — the Cogentiq tenant
-host `cogentiq.fractal.ai` answers `502` from its Azure Application Gateway to anonymous requests,
-and every `/.well-known/*` path on `fractal.ai` returns `404`. See
-[`well-known/fractal-analytics-well-known.yml`](well-known/fractal-analytics-well-known.yml) for
-the probe record.
+**Areas:** Company · Artificial Intelligence · Analytics · Data Engineering · Consulting · AI Agents · Enterprise AI · Machine Learning · Decision Intelligence · Professional Services
 
-- https://fractal.ai/
-- https://fractal.ai/products/cogentiq/
+## Fractal Analytics on APIs.io
+
+Everything profiled for Fractal Analytics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fractal-analytics/](https://apis.io/providers/fractal-analytics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Fractal Analytics Domain Security](https://apis.io/security/fractal-analytics/fractal-analytics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://fractal.ai/)
+- [Support](https://fractal.ai/contact-us/)
+- [Blog](https://fractal.ai/blog/)
+- [Privacy policy](https://fractal.ai/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 10.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fractal-analytics/](https://apis.io/providers/fractal-analytics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fractal Analytics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fractal-analytics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
